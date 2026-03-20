@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alquimistas de IA — Reporte OCESA | Cohorte Feb 2026</title>
+<meta name="description" content="Reporte interactivo de evaluación del programa Alquimistas de IA para la cohorte OCESA, febrero 2026.">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <svg class="nav-logo" viewBox="0 0 32 32" width="28" height="28" aria-label="Alquimistas de IA">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M16 6 L22 22 L10 22 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="16" cy="17" r="3" fill="currentColor" opacity="0.3"/>
+        <circle cx="16" cy="17" r="1.5" fill="currentColor"/>
+      </svg>
+      <span class="nav-title">Alquimistas de IA</span>
+    </div>
+    <div class="nav-links">
+      <a href="#overview" class="nav-link active" data-section="overview">Resumen</a>
+      <a href="#sprints" class="nav-link" data-section="sprints">Sprints</a>
+      <a href="#ranking" class="nav-link" data-section="ranking">Ranking</a>
+      <a href="#maturity" class="nav-link" data-section="maturity">Madurez IA</a>
+      <a href="#alchemists" class="nav-link" data-section="alchemists">Alquimistas</a>
+    </div>
+    <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Cohorte OCESA — Febrero 2026</div>
+    <h1 class="hero-title">Alquimistas de IA</h1>
+    <p class="hero-subtitle">Reporte de evaluación del programa de capacitación en Inteligencia Artificial</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-value" id="heroEnrolled">88</span>
+        <span class="hero-stat-label">Inscritos</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value" id="heroEvaluated">52</span>
+        <span class="hero-stat-label">Evaluados</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value" id="heroAvg">3.12</span>
+        <span class="hero-stat-label">Promedio</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value" id="heroSprints">4</span>
+        <span class="hero-stat-label">Sprints</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Overview Section -->
+<section class="section" id="overview">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Resumen General</h2>
+      <p class="section-desc">Vista panorámica del desempeño de la cohorte a lo largo de los 4 sprints del programa.</p>
+    </div>
+    
+    <!-- KPI Cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon" style="background: var(--color-amber-soft);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-amber)" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <div class="kpi-content">
+          <span class="kpi-value" id="kpiHighlighted">5</span>
+          <span class="kpi-label">Alquimistas Destacados</span>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon" style="background: var(--color-teal-soft);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-teal)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="kpi-content">
+          <span class="kpi-value" id="kpiFormacion">20</span>
+          <span class="kpi-label">En Práctica</span>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon" style="background: var(--color-violet-soft);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-violet)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="kpi-content">
+          <span class="kpi-value" id="kpiProgression">+0.34</span>
+          <span class="kpi-label">Progresión Sprint 1→4</span>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon" style="background: var(--color-rose-soft);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-rose)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="kpi-content">
+          <span class="kpi-value" id="kpiInactive">33</span>
+          <span class="kpi-label">Sin Actividad</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3 class="chart-title">Clasificación de Alquimistas</h3>
+        <div class="chart-container">
+          <canvas id="classificationChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title">Distribución de Niveles (101 evaluaciones)</h3>
+        <div class="chart-container">
+          <canvas id="levelChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="charts-grid">
+      <div class="chart-card chart-card-wide">
+        <h3 class="chart-title">Participación y Desempeño por Sprint</h3>
+        <div class="chart-container chart-container-wide">
+          <canvas id="sprintChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Participation funnel -->
+    <div class="funnel-card">
+      <h3 class="chart-title">Embudo de Participación</h3>
+      <p class="chart-subtitle">De inscritos a participación sostenida</p>
+      <div class="funnel">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sprints Section -->
+<section class="section section-alt" id="sprints">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Análisis por Sprint</h2>
+      <p class="section-desc">Desempeño detallado en cada fase del programa.</p>
+    </div>
+    
+    <div class="sprint-tabs">
+      <button class="sprint-tab active" data-sprint="1">🧪 Sprint 1</button>
+      <button class="sprint-tab" data-sprint="2">🛡️ Sprint 2</button>
+      <button class="sprint-tab" data-sprint="3">🧩 Sprint 3</button>
+      <button class="sprint-tab" data-sprint="4">🔮 Sprint 4</button>
+    </div>
+
+    <div class="sprint-content" id="sprintContent">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Ranking Section -->
+<section class="section" id="ranking">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Ranking de Estudiantes</h2>
+      <p class="section-desc">Todos los estudiantes evaluados, ordenados por desempeño.</p>
+    </div>
+    
+    <div class="ranking-controls">
+      <div class="search-box">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Buscar estudiante..." class="search-input">
+      </div>
+      <div class="filter-group">
+        <select id="classFilter" class="filter-select">
+          <option value="all">Todas las clasificaciones</option>
+          <option value="Alquimista Destacado">Destacado</option>
+          <option value="Alquimista en Práctica">En Práctica</option>
+          <option value="Aprendiz Activo">Aprendiz Activo</option>
+          <option value="Participación Insuficiente">Participación Insuficiente</option>
+        </select>
+        <select id="sprintFilter" class="filter-select">
+          <option value="all">Todos los sprints</option>
+          <option value="1">Sprint 1</option>
+          <option value="2">Sprint 2</option>
+          <option value="3">Sprint 3</option>
+          <option value="4">Sprint 4</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="ranking-table-wrapper">
+      <table class="ranking-table" id="rankingTable">
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-name sortable" data-sort="name">Estudiante <span class="sort-arrow"></span></th>
+            <th class="col-class sortable" data-sort="class">Clasificación <span class="sort-arrow"></span></th>
+            <th class="col-avg sortable" data-sort="avg">Promedio <span class="sort-arrow"></span></th>
+            <th class="col-sprints sortable active-sort" data-sort="sprints">Sprints <span class="sort-arrow desc">▼</span></th>
+            <th class="col-sparkline">Trayectoria</th>
+            <th class="col-action"></th>
+          </tr>
+        </thead>
+        <tbody id="rankingBody">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </div>
+    <div class="ranking-count" id="rankingCount"></div>
+  </div>
+</section>
+
+<!-- Maturity Map Section -->
+<section class="section section-alt" id="maturity">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Mapa de Madurez IA en OCESA</h2>
+      <p class="section-desc">¿Dónde están los colaboradores en su camino de adopción de IA y cómo pueden dar el siguiente salto?</p>
+    </div>
+
+    <!-- Maturity KPIs -->
+    <div class="maturity-kpi-row" id="maturityKpis">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Charts row -->
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3 class="chart-title">Nivel de Madurez IA</h3>
+        <div class="chart-container">
+          <canvas id="maturityChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3 class="chart-title">Competencias Promedio</h3>
+        <div class="chart-container">
+          <canvas id="areasChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint maturity progression -->
+    <div class="charts-grid">
+      <div class="chart-card chart-card-wide">
+        <h3 class="chart-title">Evolución de Madurez por Sprint</h3>
+        <div class="chart-container chart-container-wide">
+          <canvas id="maturityProgressionChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Level-up cards -->
+    <div class="level-up-grid" id="levelUpGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Alchemists Spotlight -->
+<section class="section" id="alchemists">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Verdaderos Alquimistas de IA</h2>
+      <p class="section-desc">Los estudiantes que demostraron dominio excepcional y consistencia a lo largo del programa.</p>
+    </div>
+    
+    <div class="alchemist-grid" id="alchemistGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Student Detail Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="studentModal">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-content" id="modalContent">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p class="footer-text">Reporte generado el 18 de marzo de 2026</p>
+      <p class="footer-note">Las calificaciones son borradores de evaluación y no representan notas finales oficiales.</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer-attribution">
+        Created with Perplexity Computer
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
