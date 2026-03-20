@@ -3,9 +3,11 @@ const DASHBOARD_DATA = {
         "totalStudents": 89,
         "evaluatedStudents": 55,
         "maturityDistribution": {
-            "Alquimista Destacado": 4,
-            "Alquimista en Práctica": 28,
-            "Aprendiz Activo": 23,
+            "Talento de Alto Potencial": 3,
+            "Alquimista Consistente": 6,
+            "Alquimista Completo": 2,
+            "Aprendiz Activo": 33,
+            "Alquimista en Práctica": 11,
             "Participación Insuficiente": 34
         },
         "sprintStats": {
@@ -45,7 +47,75 @@ const DASHBOARD_DATA = {
             "Artefacto Cognitivo": 2.87,
             "Visión de Workflow Profesional": 2.88
         },
-        "overallAverage": 2.63
+        "overallAverage": 2.63,
+        "competencies": [
+            "Estructura del Prompt",
+            "Aplicación a Caso Real",
+            "Pensamiento de Ingeniero",
+            "Dominio de Técnicas Avanzadas",
+            "Control de Calidad (Anti-Slop)",
+            "Iteración y Refinamiento",
+            "Arquitectura del Sistema",
+            "Relevancia del Problema",
+            "Justificación Técnica",
+            "Calidad de la Evidencia",
+            "Orquestación y Selección",
+            "Artefacto Cognitivo",
+            "Visión de Workflow Profesional"
+        ],
+        "sprintCompetencies": {
+            "1": [
+                "Estructura del Prompt",
+                "Aplicación a Caso Real",
+                "Pensamiento de Ingeniero"
+            ],
+            "2": [
+                "Dominio de Técnicas Avanzadas",
+                "Control de Calidad (Anti-Slop)",
+                "Iteración y Refinamiento"
+            ],
+            "3": [
+                "Arquitectura del Sistema",
+                "Relevancia del Problema",
+                "Justificación Técnica",
+                "Calidad de la Evidencia"
+            ],
+            "4": [
+                "Orquestación y Selección",
+                "Artefacto Cognitivo",
+                "Visión de Workflow Profesional"
+            ]
+        },
+        "executiveInsights": {
+            "totalEnrolled": 89,
+            "totalEvaluated": 55,
+            "completedProgram": 4,
+            "threePlusSprints": 19,
+            "highPotentialNames": [
+                "Daniela Ibarra",
+                "Paulina Rodriguez",
+                "Axel Arredondo"
+            ],
+            "completoNames": [
+                "Daniela Casas Herrera",
+                "Merving Pastor Giron Zarate"
+            ],
+            "consistenteNames": [
+                "Erik Mora",
+                "Pamela Rojas",
+                "Axel Trujillo",
+                "Joanna jimenez",
+                "Sandra Maciel Blancas Moncada",
+                "Omar Cuauhtemoc Morfín López"
+            ],
+            "sprintCompletionFunnel": {
+                "1": 23,
+                "2": 13,
+                "3": 15,
+                "4": 4
+            },
+            "dropoffRate": 93
+        }
     },
     "students": [
         {
@@ -78,10 +148,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.8,
-            "maturity": "Alquimista Destacado",
+            "maturity": "Talento de Alto Potencial",
             "progression": 0,
             "synthesis": "Daniela demuestra dominio técnico sobresaliente en su único sprint, con dos prompts maestros de nivel destacado aplicados a casos reales del entretenimiento en vivo. Su fortaleza es la estructura del prompt y la aplicación contextual, ambas con puntuación perfecta de 4.0. Clasificada como Alquimista Destacado, lidera el ranking del grupo.",
-            "rank": 1
+            "rank": 1,
+            "competencyMap": {
+                "Estructura del Prompt": 4.0,
+                "Aplicación a Caso Real": 4.0,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10691060",
@@ -113,10 +207,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.8,
-            "maturity": "Alquimista Destacado",
+            "maturity": "Talento de Alto Potencial",
             "progression": 0,
             "synthesis": "Paulina presenta un trabajo sobresaliente en su sprint, con un Prompt Maestro aplicado a un showroom de 600 eventos que refleja comprensión profunda de sistemas complejos. Su punto más fuerte es la aplicación a caso real (4.0), lo que evidencia un uso profesional maduro de la ingeniería de prompts. Clasificada como Alquimista Destacado, se posiciona entre las mejores del grupo.",
-            "rank": 2
+            "rank": 2,
+            "competencyMap": {
+                "Estructura del Prompt": 3.8,
+                "Aplicación a Caso Real": 4.0,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11633342",
@@ -148,10 +266,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.5,
-            "maturity": "Alquimista Destacado",
+            "maturity": "Talento de Alto Potencial",
             "progression": 0,
             "synthesis": "Axel muestra un nivel técnico homogéneo y sólido en su sprint, con un prompt altamente sofisticado que incluye instrucciones de razonamiento tipo Chain-of-Thought y restricciones anti-slop. Sus tres competencias evaluadas alcanzan 3.5, reflejando un perfil equilibrado sin puntos débiles claros. Clasificado como Alquimista Destacado con ejecución técnica consistente.",
-            "rank": 3
+            "rank": 3,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11245039",
@@ -226,10 +368,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 3,
             "overallAvg": 3.5,
-            "maturity": "Alquimista Destacado",
+            "maturity": "Alquimista Consistente",
             "progression": 0.0,
             "synthesis": "Erik mantiene un rendimiento destacado y estable a lo largo de 3 sprints, con puntuaciones consistentes de 3.5 en cada etapa, desde la construcción de prompts maestros hasta el diseño de sistemas Supervisor-Worker para gestión de producción audiovisual. Su fortaleza más notable es la relevancia de los problemas abordados (4.0 en Sprint 3). Clasificado como Alquimista Destacado con trayectoria horizontal sólida.",
-            "rank": 4
+            "rank": 4,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 3.5,
+                "Arquitectura del Sistema": 3.5,
+                "Relevancia del Problema": 4.0,
+                "Justificación Técnica": 3.5,
+                "Calidad de la Evidencia": 3.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10345495",
@@ -323,10 +489,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 4,
             "overallAvg": 3.4,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Completo",
             "progression": -0.1,
             "synthesis": "Daniela C. inició con el trabajo más completo del primer sprint (3.8) y mantiene un desempeño consistentemente sólido a lo largo de 4 sprints, con una ligera variación natural que culmina en un repunte destacado en el Sprint 4 (3.7) con artefactos cognitivos funcionales. Su mayor fortaleza es el artefacto cognitivo (4.0) y la aplicación a casos reales complejos. Clasificada como Alquimista en Práctica con trayectoria estable y versatilidad demostrada.",
-            "rank": 5
+            "rank": 5,
+            "competencyMap": {
+                "Estructura del Prompt": 4.0,
+                "Aplicación a Caso Real": 4.0,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 3.0,
+                "Arquitectura del Sistema": 3.0,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.5,
+                "Calidad de la Evidencia": 3.0,
+                "Orquestación y Selección": 3.5,
+                "Artefacto Cognitivo": 4.0,
+                "Visión de Workflow Profesional": 3.5
+            },
+            "competencyCoverage": 13,
+            "competencyTotal": 13,
+            "coveragePct": 100,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": true
+            }
         },
         {
             "id": "Student_10852789",
@@ -356,10 +546,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.4,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Jose construye en su único sprint un prompt con estructura completa y muy bien ejecutada, con Rol experto, contexto situacional detallado y restricciones claras aplicadas a un caso profesional real. Sus fortalezas están distribuidas entre estructura y aplicación contextual (ambas 3.5). Clasificado como Alquimista en Práctica, muestra un nivel de madurez técnica consolidado.",
-            "rank": 6
+            "rank": 6,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.2,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10143645",
@@ -389,10 +603,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.3,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Alejandro presenta dos prompts bien estructurados con todos los componentes clave, aplicados a su contexto real en OCESA, lo que denota comprensión práctica del dominio. Su fortaleza está en la estructura del prompt y la aplicación a casos reales (ambas 3.5), mientras el pensamiento de ingeniero tiene espacio de crecimiento. Clasificado como Alquimista en Práctica con base técnica sólida.",
-            "rank": 7
+            "rank": 7,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11301436",
@@ -448,7 +686,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.2,
             "synthesis": "Angel demuestra un nivel técnico consistente en 2 sprints, con prompts de producción UGC técnicamente rigurosos en el primero y dominio de técnicas de precisión como Chain-of-Thought en el segundo. Su fortaleza principal es el control de calidad y pensamiento estructurado (3.5 en ambos sprints). Clasificado como Alquimista en Práctica con leve descenso entre sprints, sugiriendo oportunidad de profundizar en iteración y refinamiento.",
-            "rank": 8
+            "rank": 8,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.2,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": 3.2,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 2.8,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10887226",
@@ -478,10 +740,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.3,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Eduardo construye un prompt de orquestación administrativa sofisticado, con arquitectura de SharePoint para FP&A y cuatro canales de información integrados. Su punto más fuerte es la aplicación a caso real (3.5), donde demuestra comprensión profunda de su entorno profesional. Clasificado como Alquimista en Práctica, muestra potencial técnico bien fundamentado en contexto operativo real.",
-            "rank": 9
+            "rank": 9,
+            "competencyMap": {
+                "Estructura del Prompt": 3.3,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.2,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10338749",
@@ -513,10 +799,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.3,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Jesus Manuel presenta un prompt maestro con workflow cognitivo de 4 fases ejecutadas en orden lógico, destacando por su pensamiento de ingeniero y estructura formal (ambas 3.5). Su aplicación a caso real muestra espacio de mejora (3.0), sugiriendo que la profundidad contextual puede enriquecerse. Clasificado como Alquimista en Práctica con fortaleza en diseño de flujos estructurados.",
-            "rank": 10
+            "rank": 10,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11800754",
@@ -587,10 +897,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 3,
             "overallAvg": 3.3,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Consistente",
             "progression": -0.2,
             "synthesis": "Pamela muestra una trayectoria mixta en 3 sprints: arranca sólida, alcanza su pico en el Sprint 2 (3.5) con dominio de técnicas avanzadas como Step-Back y prompting en capas, y cierra con una leve caída en el Sprint 3 (3.1). Su fortaleza principal es el dominio técnico y el control de calidad, aunque la calidad de la evidencia requiere mayor rigor. Clasificada como Alquimista en Práctica con tendencia a la estabilización.",
-            "rank": 11
+            "rank": 11,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 3.5,
+                "Arquitectura del Sistema": 3.5,
+                "Relevancia del Problema": 3.5,
+                "Justificación Técnica": 3.5,
+                "Calidad de la Evidencia": 2.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_11642827",
@@ -620,10 +954,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.3,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Paulina entrega un prompt muy bien estructurado con Rol especializado, contexto técnico detallado de producción de eventos y lineamientos de salida claros. Sus fortalezas están en la estructura y la aplicación a caso real (ambas 3.5), con pensamiento de ingeniero como área de desarrollo. Clasificada como Alquimista en Práctica, muestra madurez técnica aplicada a su entorno profesional.",
-            "rank": 12
+            "rank": 12,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10332512",
@@ -694,10 +1052,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 3,
             "overallAvg": 3.2,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Consistente",
             "progression": -0.4,
             "synthesis": "Axel inicia con prompts elaborados y bien estructurados (Sprint 1: 3.3) y dominio de técnicas Anti-Slop aplicadas a propuestas comerciales (Sprint 2: 3.3), pero presenta una caída en el Sprint 3 (2.9) donde la arquitectura de sistema muestra debilidades. Su mayor fortaleza es la relevancia de los problemas abordados (3.5 en Sprint 3). Clasificado como Alquimista en Práctica con tendencia descendente que requiere atención en diseño de sistemas.",
-            "rank": 13
+            "rank": 13,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 3.0,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.5,
+                "Justificación Técnica": 3.0,
+                "Calidad de la Evidencia": 2.5,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10886355",
@@ -727,10 +1109,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.2,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Fernando presenta un prompt bien estructurado con workflow numerado, formato de salida definido y restricciones claras, aplicado a un caso profesional concreto. Sus competencias están equilibradas aunque el pensamiento de ingeniero (3.0) representa el mayor espacio de crecimiento. Clasificado como Alquimista en Práctica con base metodológica funcional.",
-            "rank": 14
+            "rank": 14,
+            "competencyMap": {
+                "Estructura del Prompt": 3.3,
+                "Aplicación a Caso Real": 3.2,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11381698",
@@ -803,10 +1209,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 3,
             "overallAvg": 3.2,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Consistente",
             "progression": -1.4,
             "synthesis": "Joanna inició con un trabajo excepcional en el Sprint 1 (3.8), con prompts maestros altamente estructurados para BNN/OCESA, pero mostró una caída progresiva que culminó en un Sprint 3 por debajo del nivel competente (2.4). Su fortaleza principal está en la estructura del prompt y la aplicación a casos reales (ambas 4.0 en Sprint 1). Clasificada como Alquimista en Práctica con tendencia claramente descendente que amerita seguimiento y soporte.",
-            "rank": 15
+            "rank": 15,
+            "competencyMap": {
+                "Estructura del Prompt": 4.0,
+                "Aplicación a Caso Real": 4.0,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 3.0,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.0,
+                "Calidad de la Evidencia": 2.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10038613",
@@ -898,10 +1328,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 4,
             "overallAvg": 3.2,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Completo",
             "progression": -0.8,
             "synthesis": "Merving muestra una trayectoria en forma de campana a lo largo de 4 sprints: parte sólido (3.3), alcanza su mejor momento en el Sprint 2 con un trabajo sobresaliente de iteración y refinamiento (3.9), y desciende en los sprints siguientes hasta 2.5 en el Sprint 4. Su punto más fuerte es la iteración y refinamiento documentado (4.0). Clasificado como Alquimista en Práctica con pico de rendimiento en técnicas avanzadas y necesidad de consolidar en fases de orquestación.",
-            "rank": 16
+            "rank": 16,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 3.8,
+                "Control de Calidad (Anti-Slop)": 3.8,
+                "Iteración y Refinamiento": 4.0,
+                "Arquitectura del Sistema": 3.0,
+                "Relevancia del Problema": 3.5,
+                "Justificación Técnica": 3.5,
+                "Calidad de la Evidencia": 3.0,
+                "Orquestación y Selección": 2.0,
+                "Artefacto Cognitivo": 3.0,
+                "Visión de Workflow Profesional": 2.5
+            },
+            "competencyCoverage": 13,
+            "competencyTotal": 13,
+            "coveragePct": 100,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": true
+            }
         },
         {
             "id": "Student_10084496",
@@ -931,10 +1385,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 3.2,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Miguel construye un prompt con todos los componentes explícitos, incluyendo Proceso a Transformar y Restricciones de Co-Inteligencia, lo que evidencia una comprensión sistemática del diseño de prompts. Su fortaleza está en la estructura del prompt (3.5), con el pensamiento de ingeniero como área de mayor oportunidad. Clasificado como Alquimista en Práctica con enfoque metodológico bien definido.",
-            "rank": 17
+            "rank": 17,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.2,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11343040",
@@ -1007,10 +1485,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 3,
             "overallAvg": 3.2,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Consistente",
             "progression": -0.1,
             "synthesis": "Sandra mantiene un desempeño consistente a lo largo de 3 sprints, con aplicación de técnicas de verificación y anti-alucinación en el Sprint 2 y diseño de un SOP cognitivo sólido para NIDO en el Sprint 3. Su fortaleza más consistente es la estructura del prompt y el dominio técnico (3.5 en múltiples sprints). Clasificada como Alquimista en Práctica con trayectoria estable y profundidad técnica demostrada.",
-            "rank": 18
+            "rank": 18,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": 3.5,
+                "Relevancia del Problema": 3.5,
+                "Justificación Técnica": 3.0,
+                "Calidad de la Evidencia": 3.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10303512",
@@ -1083,10 +1585,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 3,
             "overallAvg": 3.1,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Alquimista Consistente",
             "progression": -0.5,
             "synthesis": "Omar inicia con prompts bien estructurados aplicados a casos creativos reales (Sprint 1: 3.3) y demuestra dominio de técnicas avanzadas como triangulación forzada y filtros de autoridad (Sprint 2: 3.3), pero cae en el Sprint 3 (2.8) con debilidades en justificación técnica y evidencia. Su fortaleza es el dominio de técnicas de precisión y estructura. Clasificado como Alquimista en Práctica con tendencia moderadamente descendente.",
-            "rank": 19
+            "rank": 19,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 3.5,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 3.0,
+                "Arquitectura del Sistema": 3.0,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.5,
+                "Calidad de la Evidencia": 2.5,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_11046115",
@@ -1138,7 +1664,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.5,
             "synthesis": "Edson muestra un descenso entre sus dos sprints: parte con un prompt técnicamente sólido para análisis de sentimiento (Sprint 1: 3.3) y disminuye en el Sprint 2 (2.8) donde la iteración y refinamiento resultan el área más débil. Su fortaleza está en la estructura del prompt y la aplicación contextual (3.5 en Sprint 1). Clasificado como Alquimista en Práctica con necesidad de fortalecer las técnicas de refinamiento iterativo.",
-            "rank": 20
+            "rank": 20,
+            "competencyMap": {
+                "Estructura del Prompt": 3.5,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 3.0,
+                "Control de Calidad (Anti-Slop)": 3.0,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11253521",
@@ -1190,7 +1740,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.4,
             "synthesis": "Iliana presenta un prompt maestro sólido para análisis de datos con flujo multi-paso bien definido (Sprint 1: 3.2), pero muestra una caída en el Sprint 2 (2.8) donde la iteración y el dominio de técnicas avanzadas requieren mayor profundidad. Su mayor fortaleza es la aplicación a caso real (3.5). Clasificada como Alquimista en Práctica con trayectoria descendente moderada.",
-            "rank": 21
+            "rank": 21,
+            "competencyMap": {
+                "Estructura del Prompt": 3.2,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.0,
+                "Dominio de Técnicas Avanzadas": 2.8,
+                "Control de Calidad (Anti-Slop)": 3.2,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10818418",
@@ -1285,7 +1859,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": 0.5,
             "synthesis": "Martha muestra una trayectoria ascendente notable a lo largo de 4 sprints: parte con dificultades para mostrar el prompt en sí (Sprint 1: 2.7) y progresa consistentemente hasta entregar artefactos cognitivos bien estructurados en el Sprint 4 (3.2). Su fortaleza más reciente es la visión de workflow profesional y el artefacto cognitivo. Clasificada como Alquimista en Práctica con tendencia claramente ascendente, lo que refleja aprendizaje activo y mejora sostenida.",
-            "rank": 22
+            "rank": 22,
+            "competencyMap": {
+                "Estructura del Prompt": 2.5,
+                "Aplicación a Caso Real": 3.2,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": 2.8,
+                "Control de Calidad (Anti-Slop)": 3.0,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": 3.2,
+                "Relevancia del Problema": 3.2,
+                "Justificación Técnica": 3.0,
+                "Calidad de la Evidencia": 2.5,
+                "Orquestación y Selección": 3.0,
+                "Artefacto Cognitivo": 3.2,
+                "Visión de Workflow Profesional": 3.3
+            },
+            "competencyCoverage": 13,
+            "competencyTotal": 13,
+            "coveragePct": 100,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": true
+            }
         },
         {
             "id": "Student_10030344",
@@ -1315,10 +1913,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 2.9,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Yesenia presenta un prompt con los cuatro elementos estructurales bien etiquetados aplicado a un caso real de su industria, demostrando comprensión funcional del marco de ingeniería de prompts. Su aplicación a caso real (3.2) es su punto más fuerte, mientras el pensamiento de ingeniero (2.5) representa el mayor espacio de crecimiento. Clasificada como Alquimista en Práctica con base funcional bien orientada.",
-            "rank": 23
+            "rank": 23,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.2,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10565433",
@@ -1348,10 +1970,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 2.8,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Heidy construye un prompt con estructura reconocible —Rol, Contexto y Tarea claramente definidos— aplicado a un problema real de su práctica profesional. Su punto más fuerte es la aplicación a caso real (3.0), aunque el pensamiento de ingeniero (2.5) requiere mayor desarrollo. Clasificada como Alquimista en Práctica, se encuentra en la transición hacia una ingeniería de prompts más sofisticada.",
-            "rank": 24
+            "rank": 24,
+            "competencyMap": {
+                "Estructura del Prompt": 2.8,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11251340",
@@ -1427,7 +2073,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.2,
             "synthesis": "Ligia muestra dominio de técnicas creativas avanzadas como Archetype Anchoring y Negative Prompting en el Sprint 2 (3.0), pero presenta debilidades en calidad de evidencia en el Sprint 3 (1.5). Su fortaleza más consistente es la visión de workflow profesional y el control de calidad. Clasificada como Alquimista en Práctica con trayectoria ligeramente descendente y necesidad de robustecer la evidencia técnica de sus entregas.",
-            "rank": 25
+            "rank": 25,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": 3.0,
+                "Control de Calidad (Anti-Slop)": 3.2,
+                "Iteración y Refinamiento": 2.8,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.8,
+                "Calidad de la Evidencia": 1.5,
+                "Orquestación y Selección": 2.5,
+                "Artefacto Cognitivo": 2.8,
+                "Visión de Workflow Profesional": 3.0
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": false,
+                "2": true,
+                "3": true,
+                "4": true
+            }
         },
         {
             "id": "Student_11261248",
@@ -1501,7 +2171,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.4,
             "synthesis": "Casandra inicia con un sistema de 3 prompts encadenados con roles bien diferenciados para diseño de eventos (Sprint 1: 3.0), pero muestra caída progresiva en los sprints siguientes (2.6 y 2.6). Su mayor fortaleza es la relevancia de los problemas que aborda (3.0–3.2), mientras la calidad de la evidencia técnica y la profundidad arquitectónica requieren refuerzo. Clasificada como Alquimista en Práctica con tendencia descendente moderada.",
-            "rank": 26
+            "rank": 26,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.2,
+                "Pensamiento de Ingeniero": 2.8,
+                "Dominio de Técnicas Avanzadas": 2.5,
+                "Control de Calidad (Anti-Slop)": 2.8,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.8,
+                "Calidad de la Evidencia": 2.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10810248",
@@ -1531,10 +2225,34 @@ const DASHBOARD_DATA = {
             },
             "numSprints": 1,
             "overallAvg": 2.7,
-            "maturity": "Alquimista en Práctica",
+            "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Jose Luis construye un prompt con estructura formal correcta —Rol, Tarea, Contexto, Restricciones y Formato— con especificaciones visuales muy detalladas. Su fortaleza principal está en la estructura del prompt (3.2), mientras la aplicación a caso real y el pensamiento de ingeniero (ambos 2.5) presentan oportunidad de profundización contextual. Clasificado como Alquimista en Práctica con base estructural sólida pero aplicación práctica limitada.",
-            "rank": 27
+            "rank": 27,
+            "competencyMap": {
+                "Estructura del Prompt": 3.2,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10151603",
@@ -1610,7 +2328,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.2,
             "synthesis": "Edgar muestra un desempeño consistente pero con leve descenso a lo largo de 3 sprints: inicia con un prompt bien construido para su área (2.8), demuestra comprensión del control de alucinaciones en el Sprint 2 (2.5), y presenta un sistema Supervisor-Worker con roles definidos en el Sprint 3 (2.6). Su fortaleza más consistente es el control de calidad (3.0 en Sprint 2). Clasificado como Alquimista en Práctica con perfil estable en desarrollo gradual.",
-            "rank": 28
+            "rank": 28,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": 2.5,
+                "Control de Calidad (Anti-Slop)": 3.0,
+                "Iteración y Refinamiento": 2.0,
+                "Arquitectura del Sistema": 3.0,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.5,
+                "Calidad de la Evidencia": 2.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10506824",
@@ -1664,7 +2406,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": 0.2,
             "synthesis": "Paulina muestra una leve mejora entre sus dos sprints: parte con un prompt estructurado pero sin misiones completas (Sprint 1: 2.5) y avanza en el Sprint 2 (2.7) con aplicación correcta de Chain-of-Thought en tres capas para un problema real. Su fortaleza está en el dominio de técnicas avanzadas (3.0 en Sprint 2). Clasificada como Alquimista en Práctica con tendencia levemente ascendente.",
-            "rank": 29
+            "rank": 29,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 2.0,
+                "Dominio de Técnicas Avanzadas": 3.0,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10221483",
@@ -1718,7 +2484,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -2.2,
             "synthesis": "Roberto presenta la caída más pronunciada del grupo: un Sprint 1 de nivel experto (3.7) con prompts de evaluación sofisticados se contrasta radicalmente con un Sprint 2 casi vacío (1.5) que no demuestra ninguna de las técnicas requeridas. Su fortaleza real está en la estructura del prompt (4.0 en Sprint 1) y el pensamiento de ingeniero. Clasificado como Alquimista en Práctica, pero su progresión descendente severa indica una discontinuidad de participación que requiere atención.",
-            "rank": 30
+            "rank": 30,
+            "competencyMap": {
+                "Estructura del Prompt": 4.0,
+                "Aplicación a Caso Real": 3.5,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": 1.5,
+                "Control de Calidad (Anti-Slop)": 2.0,
+                "Iteración y Refinamiento": 1.0,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10911340",
@@ -1770,7 +2560,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -0.3,
             "synthesis": "Rodrigo presenta prompts con estructura bien definida aplicados a eventos reales (Sprint 1: 2.8), y en el Sprint 2 (2.5) muestra comprensión del proceso de refinamiento de prompts aunque con profundidad técnica limitada. Sus competencias son equilibradas pero se mantienen en el rango medio en ambas etapas. Clasificado como Alquimista en Práctica con trayectoria ligeramente descendente y base técnica funcional.",
-            "rank": 31
+            "rank": 31,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": 2.5,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10119740",
@@ -1824,7 +2638,31 @@ const DASHBOARD_DATA = {
             "maturity": "Alquimista en Práctica",
             "progression": -2.6,
             "synthesis": "Daniela S. muestra la mayor discontinuidad del grupo: un Sprint 1 excepcional (3.8) con prompt modular de variables claramente definidas contrasta con una entrega mínima en el Sprint 2 (1.2) donde nombra técnicas sin demostrarlas. Su fortaleza demostrada está en la estructura del prompt (4.0) y la aplicación a caso real (3.8). Clasificada como Alquimista en Práctica con caída severa que sugiere falta de seguimiento en los sprints avanzados.",
-            "rank": 32
+            "rank": 32,
+            "competencyMap": {
+                "Estructura del Prompt": 4.0,
+                "Aplicación a Caso Real": 3.8,
+                "Pensamiento de Ingeniero": 3.5,
+                "Dominio de Técnicas Avanzadas": 1.5,
+                "Control de Calidad (Anti-Slop)": 1.0,
+                "Iteración y Refinamiento": 1.0,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11607925",
@@ -1896,7 +2734,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": -0.8,
             "synthesis": "Carlos inicia con una estructura de prompt competente para contextos de montaje BTL (Sprint 1: 2.8), pero muestra descenso progresivo en los sprints siguientes (2.3 y 2.0) donde la profundidad técnica y el diseño de sistemas no alcanzan el nivel requerido. Su fortaleza relativa está en la aplicación a contexto real y el refinamiento de outputs. Clasificado como Aprendiz Activo con tendencia descendente que requiere intervención de apoyo.",
-            "rank": 33
+            "rank": 33,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 2.5,
+                "Arquitectura del Sistema": 2.0,
+                "Relevancia del Problema": 2.5,
+                "Justificación Técnica": 2.0,
+                "Calidad de la Evidencia": 1.5,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_11019661",
@@ -1948,7 +2810,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": -0.8,
             "synthesis": "Gerardo parte con un prompt bien estructurado para extracción de datos de su área (Sprint 1: 2.8), pero cae notoriamente en el Sprint 2 (2.0) al presentar solo el output final sin demostrar las técnicas utilizadas ni el proceso de refinamiento. Su fortaleza está en la estructura y la aplicación a caso real (ambas 3.0 en Sprint 1). Clasificado como Aprendiz Activo con necesidad de mayor rigor metodológico en la documentación del proceso.",
-            "rank": 34
+            "rank": 34,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 1.5,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10310831",
@@ -2038,7 +2924,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": -1.1,
             "synthesis": "Luis Francisco muestra un inicio sólido con prompts estructurados (Sprints 1 y 2: 2.8 cada uno) pero una caída progresiva hacia el Sprint 4 (1.7) donde la entrega es muy superficial. Su mayor fortaleza está en el dominio de Few-Shot y la iteración documentada (Sprint 2). Clasificado como Aprendiz Activo con tendencia descendente sostenida que requiere refuerzo en la profundidad y completitud de las entregas finales.",
-            "rank": 35
+            "rank": 35,
+            "competencyMap": {
+                "Estructura del Prompt": 3.0,
+                "Aplicación a Caso Real": 3.0,
+                "Pensamiento de Ingeniero": 2.5,
+                "Dominio de Técnicas Avanzadas": 3.0,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 3.0,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.5,
+                "Calidad de la Evidencia": 2.0,
+                "Orquestación y Selección": 1.5,
+                "Artefacto Cognitivo": 1.5,
+                "Visión de Workflow Profesional": 2.0
+            },
+            "competencyCoverage": 13,
+            "competencyTotal": 13,
+            "coveragePct": 100,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": true
+            }
         },
         {
             "id": "Student_10764631",
@@ -2113,7 +3023,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.9,
             "synthesis": "Mariana muestra una trayectoria ascendente destacada a lo largo de los sprints disponibles: parte de un Sprint 2 con comprensión conceptual pero sin ejecución técnica plena (1.9) y progresa hacia entregas más concretas en Sprints 3 y 4 (2.5 y 2.8). Su fortaleza es la visión de workflow profesional y la relevancia de los problemas que identifica. Clasificada como Aprendiz Activo con la tendencia ascendente más marcada de su nivel, lo que indica aprendizaje activo sostenido.",
-            "rank": 36
+            "rank": 36,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.2,
+                "Iteración y Refinamiento": 1.5,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.8,
+                "Calidad de la Evidencia": 1.5,
+                "Orquestación y Selección": 2.8,
+                "Artefacto Cognitivo": 2.7,
+                "Visión de Workflow Profesional": 3.0
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": false,
+                "2": true,
+                "3": true,
+                "4": true
+            }
         },
         {
             "id": "Student_11306706",
@@ -2186,7 +3120,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 1.7,
             "synthesis": "Javier presenta la trayectoria de recuperación más notable del grupo: de una entrega casi vacía en el Sprint 1 (1.3), avanza a un prompt sofisticado con técnicas ARV y anti-slop en el Sprint 2 (2.7) y consolida con un sistema coherente de manejo de technical debt en el Sprint 3 (3.0). Su mayor fortaleza actual está en la arquitectura de sistemas y la relevancia técnica. Clasificado como Aprendiz Activo con la progresión ascendente más impresionante del grupo.",
-            "rank": 37
+            "rank": 37,
+            "competencyMap": {
+                "Estructura del Prompt": 1.5,
+                "Aplicación a Caso Real": 1.5,
+                "Pensamiento de Ingeniero": 1.0,
+                "Dominio de Técnicas Avanzadas": 3.0,
+                "Control de Calidad (Anti-Slop)": 3.0,
+                "Iteración y Refinamiento": 2.0,
+                "Arquitectura del Sistema": 3.0,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 3.0,
+                "Calidad de la Evidencia": 3.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10061858",
@@ -2258,7 +3216,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": -0.4,
             "synthesis": "Milton muestra una trayectoria irregular: arranca con un prompt incompleto (Sprint 1: 2.0), alcanza su mejor momento en el Sprint 2 (3.2) con dominio aplicado de Anti-Slop y CoT para copies de festival urbano, y cae nuevamente en el Sprint 3 (1.6) con una entrega escueta. Su pico de rendimiento en técnicas de control de calidad (3.5 en Sprint 2) revela su potencial real. Clasificado como Aprendiz Activo con rendimiento inconsistente que requiere mayor constancia.",
-            "rank": 38
+            "rank": 38,
+            "competencyMap": {
+                "Estructura del Prompt": 2.0,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": 3.2,
+                "Control de Calidad (Anti-Slop)": 3.5,
+                "Iteración y Refinamiento": 2.8,
+                "Arquitectura del Sistema": 1.5,
+                "Relevancia del Problema": 2.5,
+                "Justificación Técnica": 1.5,
+                "Calidad de la Evidencia": 1.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_11410393",
@@ -2291,7 +3273,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Pamela presenta un prompt con Rol definido y protocolo de 4 pasos con restricciones explícitas, evidenciando comprensión básica del marco de ingeniería de prompts. Sus puntuaciones están en rango de En Desarrollo en todas las competencias (2.0–2.5), con la aplicación a caso real como punto relativamente más fuerte. Clasificada como Aprendiz Activo, se encuentra en las etapas iniciales de su curva de aprendizaje.",
-            "rank": 39
+            "rank": 39,
+            "competencyMap": {
+                "Estructura del Prompt": 2.5,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 2.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11288074",
@@ -2324,7 +3330,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Miranda presenta un prompt con elementos de Rol y Contexto aplicados al lanzamiento de un teatro inmersivo en CDMX, mostrando conciencia de la importancia del contexto situacional. Su mayor fortaleza es la aplicación a caso real (2.5), aunque el pensamiento de ingeniero (2.0) requiere desarrollo significativo. Clasificada como Aprendiz Activo en fase de construcción de fundamentos técnicos.",
-            "rank": 40
+            "rank": 40,
+            "competencyMap": {
+                "Estructura del Prompt": 2.2,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 2.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10254217",
@@ -2357,7 +3387,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Rodrigo presenta un prompt con estructura básica —Rol, Tarea, Enfoque y Salida— aplicado a su contexto profesional, mostrando comprensión inicial del marco. Su limitación principal es el pensamiento de ingeniero (1.5), el más bajo de sus competencias evaluadas. Clasificado como Aprendiz Activo con comprensión estructural inicial que necesita profundización en la dimensión analítica del diseño de prompts.",
-            "rank": 41
+            "rank": 41,
+            "competencyMap": {
+                "Estructura del Prompt": 2.5,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10834460",
@@ -2410,7 +3464,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.6,
             "synthesis": "Alberto muestra una mejora entre sus dos sprints: de un prompt muy breve sin contexto suficiente (Sprint 1: 1.8) avanza hacia una aplicación más intencionada de Chain-of-Thought con análisis de tensiones estratégicas reales (Sprint 2: 2.4). Su mayor fortaleza emergente está en el control de calidad y el dominio incipiente de técnicas avanzadas. Clasificado como Aprendiz Activo con tendencia levemente ascendente.",
-            "rank": 42
+            "rank": 42,
+            "competencyMap": {
+                "Estructura del Prompt": 2.0,
+                "Aplicación a Caso Real": 1.5,
+                "Pensamiento de Ingeniero": 1.8,
+                "Dominio de Técnicas Avanzadas": 2.5,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 2.3,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10354248",
@@ -2482,7 +3560,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.4,
             "synthesis": "Magdalena muestra una progresión lenta pero ascendente a lo largo de 3 sprints: de una estructura con fases reconocibles pero débil en profundidad (Sprint 1: 2.0), avanza hacia la aplicación de contexto quirúrgico en el Sprint 2 (2.0) y logra su mejor entrega con un SOP cognitivo funcional en el Sprint 3 (2.4). Su fortaleza emergente es la relevancia del problema abordado (3.0). Clasificada como Aprendiz Activo con trayectoria ascendente que merece acompañamiento.",
-            "rank": 43
+            "rank": 43,
+            "competencyMap": {
+                "Estructura del Prompt": 2.5,
+                "Aplicación a Caso Real": 2.0,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.0,
+                "Iteración y Refinamiento": 2.0,
+                "Arquitectura del Sistema": 2.5,
+                "Relevancia del Problema": 3.0,
+                "Justificación Técnica": 2.0,
+                "Calidad de la Evidencia": 2.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_11717158",
@@ -2515,7 +3617,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Fernanda presenta un prompt de auditoría con Rol, Tarea y Formato identificables, pero muy breve y sin contexto específico de su industria real. Su mayor fortaleza relativa es la estructura del prompt (2.5), aunque el pensamiento de ingeniero (1.5) requiere desarrollo sustancial. Clasificada como Aprendiz Activo, se encuentra en las etapas iniciales de desarrollo de la ingeniería de prompts.",
-            "rank": 44
+            "rank": 44,
+            "competencyMap": {
+                "Estructura del Prompt": 2.5,
+                "Aplicación a Caso Real": 2.0,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11074074",
@@ -2548,7 +3674,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Mayra presenta un prompt con contexto y tarea razonablemente claros aplicados a su rol como Project Manager en agencia digital, lo que muestra conciencia de la importancia de la especificidad. Su punto más fuerte es la aplicación a caso real (2.5), con pensamiento de ingeniero (1.5) como principal área de desarrollo. Clasificada como Aprendiz Activo con enfoque práctico inicial que necesita mayor sofisticación estructural.",
-            "rank": 45
+            "rank": 45,
+            "competencyMap": {
+                "Estructura del Prompt": 2.0,
+                "Aplicación a Caso Real": 2.5,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10647041",
@@ -2601,7 +3751,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.6,
             "synthesis": "Alina muestra mejora entre sus dos sprints: de un prompt con campos incompletos y marcadores sin rellenar (Sprint 1: 1.6) avanza hacia una entrega con mayor conciencia del control de slop y preguntas más específicas (Sprint 2: 2.2). Su fortaleza emergente está en el control de calidad (2.5 en Sprint 2). Clasificada como Aprendiz Activo con progresión ascendente inicial que requiere continuidad para consolidar los fundamentos técnicos.",
-            "rank": 46
+            "rank": 46,
+            "competencyMap": {
+                "Estructura del Prompt": 1.5,
+                "Aplicación a Caso Real": 1.8,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 2.0,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10671132",
@@ -2654,7 +3828,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": -0.4,
             "synthesis": "Ana Lilia muestra un leve descenso entre sus dos sprints disponibles: en el Sprint 2 (2.0) demuestra comprensión básica de las restricciones anti-alucinación, pero en el Sprint 3 (1.6) responde de forma muy superficial a las preguntas requeridas. Su fortaleza relativa está en el control de calidad (2.5 en Sprint 2). Clasificada como Aprendiz Activo con participación incompleta y necesidad de mayor profundidad en las entregas.",
-            "rank": 47
+            "rank": 47,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.5,
+                "Iteración y Refinamiento": 1.5,
+                "Arquitectura del Sistema": 1.5,
+                "Relevancia del Problema": 2.0,
+                "Justificación Técnica": 1.8,
+                "Calidad de la Evidencia": 1.0,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 7,
+            "competencyTotal": 13,
+            "coveragePct": 54,
+            "sprintCoverage": {
+                "1": false,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10730115",
@@ -2706,7 +3904,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.0,
             "synthesis": "Claudia mantiene un nivel estable pero bajo en sus dos sprints (1.8 en ambos), con prompts que muestran cierta estructura básica y detalle creativo, pero sin alcanzar la profundidad técnica requerida. Su fortaleza relativa está en la aplicación a caso real (2.0 en ambos sprints). Clasificada como Aprendiz Activo con rendimiento estático que requiere impulso adicional para avanzar hacia el nivel Competente.",
-            "rank": 48
+            "rank": 48,
+            "competencyMap": {
+                "Estructura del Prompt": 1.8,
+                "Aplicación a Caso Real": 2.0,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 2.0,
+                "Iteración y Refinamiento": 1.5,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11028399",
@@ -2739,7 +3961,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Maria Fernanda presenta un prompt muy básico con rol genérico y tarea simple, sin contexto profundo, restricciones específicas ni formato de salida estructurado. Sus competencias se ubican en el rango Emergente (1.5–2.0), con la estructura y la aplicación contextual como áreas de desarrollo primordial. Clasificada como Aprendiz Activo en etapa inicial de construcción de los fundamentos de ingeniería de prompts.",
-            "rank": 49
+            "rank": 49,
+            "competencyMap": {
+                "Estructura del Prompt": 2.0,
+                "Aplicación a Caso Real": 2.0,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11591660",
@@ -2772,7 +4018,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Gerardo describe un uso funcional de IA para generación de presentaciones y planes de trabajo, pero no comparte el prompt en sí, lo que impide evaluar su ingeniería real. Su mayor fortaleza relativa es la aplicación a caso real (2.0), aunque la ausencia del prompt limita la evaluación. Clasificado como Aprendiz Activo, necesita enfocarse en documentar y compartir los prompts que construye para evidenciar su aprendizaje.",
-            "rank": 50
+            "rank": 50,
+            "competencyMap": {
+                "Estructura del Prompt": 1.5,
+                "Aplicación a Caso Real": 2.0,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11435313",
@@ -2805,7 +4075,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Mariana presenta un prompt muy básico para clasificar tareas en 3 categorías, sin Rol explícito ni contexto específico de su trabajo real. Sus competencias se encuentran en rango Emergente (1.5–2.0), con la aplicación contextual como área de mayor potencial. Clasificada como Aprendiz Activo en etapa inicial, necesita estructurar y contextualizar sus prompts con mayor especificidad profesional.",
-            "rank": 51
+            "rank": 51,
+            "competencyMap": {
+                "Estructura del Prompt": 1.5,
+                "Aplicación a Caso Real": 2.0,
+                "Pensamiento de Ingeniero": 1.5,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10307543",
@@ -2876,7 +4170,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.6,
             "synthesis": "Sandra muestra una progresión ascendente lenta a lo largo de 3 sprints: de una entrega sin estructura reconocible en el Sprint 1 (1.2), avanza hacia una comprensión básica de Chain-of-Thought en el Sprint 2 (1.8) y un intento de SOP en el Sprint 3 (1.8). Su mayor área de oportunidad es la elaboración de artefactos reales y la calidad de la evidencia. Clasificada como Aprendiz Activo con progresión positiva pero ritmo de avance lento.",
-            "rank": 52
+            "rank": 52,
+            "competencyMap": {
+                "Estructura del Prompt": 1.0,
+                "Aplicación a Caso Real": 1.5,
+                "Pensamiento de Ingeniero": 1.0,
+                "Dominio de Técnicas Avanzadas": 2.0,
+                "Control de Calidad (Anti-Slop)": 1.5,
+                "Iteración y Refinamiento": 2.0,
+                "Arquitectura del Sistema": 2.0,
+                "Relevancia del Problema": 2.0,
+                "Justificación Técnica": 1.5,
+                "Calidad de la Evidencia": 1.5,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 10,
+            "competencyTotal": 13,
+            "coveragePct": 77,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": true,
+                "4": false
+            }
         },
         {
             "id": "Student_10421177",
@@ -2925,7 +4243,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0.3,
             "synthesis": "Lilia Selene muestra una leve mejora entre sus dos sprints: de un prompt completamente genérico con marcadores sin rellenar (Sprint 1: 1.2), avanza hacia un prompt con rol específico y restricciones legales relevantes en el Sprint 2 (1.5). Su mayor fortaleza emergente es el control de calidad (2.0 en Sprint 2). Clasificada como Aprendiz Activo en etapa muy inicial, necesita contextualizar sus prompts con especificidad real para evidenciar aprendizaje.",
-            "rank": 53
+            "rank": 53,
+            "competencyMap": {
+                "Estructura del Prompt": 1.5,
+                "Aplicación a Caso Real": 1.0,
+                "Pensamiento de Ingeniero": 1.0,
+                "Dominio de Técnicas Avanzadas": 1.5,
+                "Control de Calidad (Anti-Slop)": 2.0,
+                "Iteración y Refinamiento": 1.0,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 6,
+            "competencyTotal": 13,
+            "coveragePct": 46,
+            "sprintCoverage": {
+                "1": true,
+                "2": true,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10457028",
@@ -2958,7 +4300,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Valeria presenta una sola oración como prompt, sin estructura identificable —sin Rol, Contexto ni Formato definidos. Aunque la idea de análisis emocional tiene potencial de aplicación real, la ejecución no demuestra dominio de los componentes básicos de la ingeniería de prompts. Clasificada como Aprendiz Activo en etapa muy inicial que requiere reforzar los fundamentos estructurales antes de avanzar.",
-            "rank": 54
+            "rank": 54,
+            "competencyMap": {
+                "Estructura del Prompt": 1.5,
+                "Aplicación a Caso Real": 1.5,
+                "Pensamiento de Ingeniero": 1.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10705431",
@@ -2991,7 +4357,31 @@ const DASHBOARD_DATA = {
             "maturity": "Aprendiz Activo",
             "progression": 0,
             "synthesis": "Ingrid entrega únicamente el inicio de un Rol sin Tarea, Contexto ni Formato, con misiones vacías y una entrega total de solo 366 caracteres. Esta es la entrega más incompleta del grupo y no permite evaluar ninguna competencia de manera significativa. Clasificada como Aprendiz Activo en la posición más baja del ranking, requiere acompañamiento intensivo para activar su participación.",
-            "rank": 55
+            "rank": 55,
+            "competencyMap": {
+                "Estructura del Prompt": 1.0,
+                "Aplicación a Caso Real": 1.5,
+                "Pensamiento de Ingeniero": 1.0,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 3,
+            "competencyTotal": 13,
+            "coveragePct": 23,
+            "sprintCoverage": {
+                "1": true,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11152836",
@@ -3004,7 +4394,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11381163",
@@ -3017,7 +4431,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11436670",
@@ -3030,7 +4468,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11495281",
@@ -3043,7 +4505,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10523998",
@@ -3056,7 +4542,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10362846",
@@ -3069,7 +4579,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11740173",
@@ -3082,7 +4616,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11361962",
@@ -3095,7 +4653,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11622739",
@@ -3108,7 +4690,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10436387",
@@ -3121,7 +4727,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10356646",
@@ -3134,7 +4764,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11340836",
@@ -3147,7 +4801,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10778371",
@@ -3160,7 +4838,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11108719",
@@ -3173,7 +4875,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10761431",
@@ -3186,7 +4912,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11241490",
@@ -3199,7 +4949,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10216017",
@@ -3212,7 +4986,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11454547",
@@ -3225,7 +5023,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10035248",
@@ -3238,7 +5060,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10840840",
@@ -3251,7 +5097,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11228987",
@@ -3264,7 +5134,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10695118",
@@ -3277,7 +5171,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10547345",
@@ -3290,7 +5208,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10140621",
@@ -3303,7 +5245,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10346343",
@@ -3316,7 +5282,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10656404",
@@ -3329,7 +5319,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10374892",
@@ -3342,7 +5356,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10460921",
@@ -3355,7 +5393,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11554293",
@@ -3368,7 +5430,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_11560391",
@@ -3381,7 +5467,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10943274",
@@ -3394,7 +5504,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10847413",
@@ -3407,7 +5541,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10618168",
@@ -3420,7 +5578,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         },
         {
             "id": "Student_10458780",
@@ -3433,7 +5615,31 @@ const DASHBOARD_DATA = {
             "maturity": "Participación Insuficiente",
             "progression": 0,
             "synthesis": "Sin entregas evaluables registradas en el programa.",
-            "rank": 56
+            "rank": 56,
+            "competencyMap": {
+                "Estructura del Prompt": null,
+                "Aplicación a Caso Real": null,
+                "Pensamiento de Ingeniero": null,
+                "Dominio de Técnicas Avanzadas": null,
+                "Control de Calidad (Anti-Slop)": null,
+                "Iteración y Refinamiento": null,
+                "Arquitectura del Sistema": null,
+                "Relevancia del Problema": null,
+                "Justificación Técnica": null,
+                "Calidad de la Evidencia": null,
+                "Orquestación y Selección": null,
+                "Artefacto Cognitivo": null,
+                "Visión de Workflow Profesional": null
+            },
+            "competencyCoverage": 0,
+            "competencyTotal": 13,
+            "coveragePct": 0,
+            "sprintCoverage": {
+                "1": false,
+                "2": false,
+                "3": false,
+                "4": false
+            }
         }
     ]
 };
